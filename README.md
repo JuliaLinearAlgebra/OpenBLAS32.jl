@@ -1,13 +1,11 @@
 # OpenBLAS32.jl
 
-[![Stable](https://img.shields.io/badge/docs-stable-blue.svg)](https://JuliaLinearAlgebra.github.io/OpenBLAS32.jl/stable/)
-[![Dev](https://img.shields.io/badge/docs-dev-blue.svg)](https://JuliaLinearAlgebra.github.io/OpenBLAS32.jl/dev/)
-[![Build Status](https://github.com/JuliaLinearAlgebra/OpenBLAS32.jl/actions/workflows/CI.yml/badge.svg?branch=main)](https://github.com/JuliaLinearAlgebra/OpenBLAS32.jl/actions/workflows/CI.yml?query=branch%3Amain)
+[![CI](https://github.com/JuliaLinearAlgebra/OpenBLAS32.jl/actions/workflows/CI.yml/badge.svg)](https://github.com/JuliaLinearAlgebra/OpenBLAS32.jl/actions/workflows/CI.yml)
 
 A simple package that depends on OpenBLAS32_jll, and sets up the
 forwarding for LP64 BLAS symbols on 64-bit architectures using
-`libblastrampoline` that ships with Julia. On 32-bit architectures,
-this package does nothing.
+[libblastrampoline](https://github.com/JuliaLinearAlgebra/libblastrampoline) that ships with Julia. 
+On 32-bit architectures, this package does nothing.
 
 This package makes the following possible:
 1. JLLs of libraries need an LP64 BLAS can now link to libblastrampoline
